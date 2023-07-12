@@ -1,0 +1,46 @@
+.content {
+    width: 46rem;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: -1.69rem;
+}
+
+.header input {
+    min-width: 39.875rem;
+    padding: 1rem;
+    border: 1px solid var(--gray-700);
+    border-radius: 0.5rem;
+    background: var(--gray-500);
+    color: var(--gray-300);
+}
+
+.header input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+.header button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--blue-dark);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background: var(--blue);
+    border: 1px solid var(--blue);
+    transition: all 0.3s;
+}
