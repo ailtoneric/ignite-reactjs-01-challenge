@@ -1,4 +1,4 @@
-.content {
+.wrapper {
     width: 46rem;
     margin: 0 auto;
 }
@@ -43,4 +43,153 @@
     background: var(--blue);
     border: 1px solid var(--blue);
     transition: all 0.3s;
+}
+
+.content {
+    margin-top: 4rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info > div p {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.info > div span {
+    padding: 0.125rem 0.5rem;
+    color: var(--gray-200);
+    background: var(--gray-400);
+    font-weight: 700;
+    font-size: 0.75rem;
+    border-radius: 62.43rem;
+}
+
+.wrapperTasks {
+    display: flex;
+    flex-direction: column;
+    gap: 1.33rem;
+    margin-top: 1.5rem;
+}
+
+
+.contentNoTasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 4rem 1.5rem;
+    border-radius: 0.5rem;
+    border-top: 1px solid var(--gray-400);
+}
+
+.contentNoTasks img {
+    width: 3.5rem;
+}
+
+.contentNoTasks p {
+    line-height: 140%;
+}
+
+.contentTasks {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.33rem;
+    padding: 1rem;
+
+    border-radius: 0.5rem;
+    border: 1px solid var(--gray-400);
+    background: var(--gray-500);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+
+}
+
+.contentTasks p {
+    line-height: 140%;
+    width: 100%;
+    color: var(--gray-100);
+}
+
+.contentTasks > img {
+    cursor: pointer;
+}
+
+.contentTasks > img:hover {
+    color: var(--danger);
+}
+
+.bContain *,
+.bContain *::before,
+.bContain *::after {
+  box-sizing: content-box !important;
+}
+
+.bContain input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.bContain {
+  display: table;
+  position: relative;
+  padding-left: 1.5rem;
+  cursor: pointer;
+}
+
+.bContain input[type="checkbox"] ~ .bInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  background: var(--gray-600);
+  transition: background 250ms;
+  border: 2px solid var(--blue);
+  border-radius: 1.5rem;
+}
+
+.bContain input[type="checkbox"] ~ .bInput::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 8px;
+  top: 4px;
+  width: 0.4rem;
+  height: 0.7rem;
+  border: solid var(--gray-100);
+  border-width: 0 2px 2px 0;
+  transition: background 250ms;
+  transform: rotate(45deg);
+}
+  
+.bContain input:checked ~ .bInput::after {
+    display: block;
+}
+
+.bContain:hover input[type="checkbox"] ~ .bInput {
+    background: var(--gray-400);
+    border-color: var(--blue-dark);
+}
+
+.bContain input[type="checkbox"]:checked ~ .bInput {
+    background: var(--purple-dark);
+    border-color: var(--purple-dark);
+}
+
+.bContain:hover input[type="checkbox"]:checked ~ .bInput {
+    background: var(--purple);
+    border-color: var(--purple);
 }
