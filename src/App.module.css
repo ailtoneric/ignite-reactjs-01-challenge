@@ -122,12 +122,16 @@
     color: var(--gray-100);
 }
 
-.contentTasks > img {
+.trashIcon {
     cursor: pointer;
 }
 
-.contentTasks > img:hover {
+.trashIcon:hover {
     color: var(--danger);
+    background: var(--gray-400);
+    border-radius: 0.125rem;
+    line-height: 0;
+    
 }
 
 .bContain *,

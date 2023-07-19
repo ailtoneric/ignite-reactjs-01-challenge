@@ -4,6 +4,7 @@ import { Header } from './components/Header'
 import plusLogo from './assets/plus.svg'
 import trashIcon from './assets/trash.svg'
 import clipboardIcon from './assets/Clipboard.svg'
+import { Trash } from '@phosphor-icons/react'
 
 import styles from './App.module.css'
 import './global.css'
@@ -75,7 +76,7 @@ export function App() {
                       <div className={styles.bInput}></div>
                     </label>
                     <p>{task.title}</p>
-                    <img src={trashIcon} alt="icone de lixeira" />
+                    <Trash className={styles.trashIcon} size={24} />
                   </div>
                 )
               })
