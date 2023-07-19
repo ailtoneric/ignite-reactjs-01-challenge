@@ -2,7 +2,6 @@ import { v4 as uuidv4 } from 'uuid'
 
 import { Header } from './components/Header'
 import plusLogo from './assets/plus.svg'
-import trashIcon from './assets/trash.svg'
 import clipboardIcon from './assets/Clipboard.svg'
 import { Trash } from '@phosphor-icons/react'
 
